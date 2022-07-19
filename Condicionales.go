@@ -27,8 +27,12 @@ func main() {
 
 	//Convertir texto a numero
 	value, err := strconv.Atoi("57")
+	value3, errres := strconv.ParseBool("true")
 	if err != nil {
 		log.Fatal(err)
+	}
+	if errres != nil {
+		fmt.Println(value3)
 	}
 	fmt.Println(value)
 }
